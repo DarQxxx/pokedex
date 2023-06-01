@@ -16,6 +16,7 @@ export class PokedexComponent implements OnInit{
   this.pokemonsService.getPokemonsData(50, 0).subscribe(
     response => {
       this.pokemonArray = response
+      console.log(response)
     },
     error => {
       console.error('Błąd podczas pobierania danych:', error);
