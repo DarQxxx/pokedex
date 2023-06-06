@@ -1,0 +1,7 @@
+@import "./colors";
+
+@each $type, $color in $types {
+  .type--#{$type}{
+    background-color: $color;
+  }
+}

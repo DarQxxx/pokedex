@@ -1,0 +1,5 @@
+<div>
+  <img src="{{pokemonData.image}}">
+  <p>{{pokemonData.name}}</p>
+  <p *ngFor="let type of pokemonData.types" [ngClass]="getColorByType(type.type.name)">{{type.type.name}}</p>
+</div>

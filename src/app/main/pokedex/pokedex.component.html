@@ -1,2 +1,1 @@
-<!--<div *ngFor="let pokemon of pokemonArray">{{pokemon.name}}</div>-->
-<app-pokemon *ngFor="let pokemon of pokemonArray" [name]="pokemon.name" [img] = "'https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/' + pokemon.id + '.svg'"></app-pokemon>
+<app-pokemon-card *ngFor="let pokemon of pokemonArray" [pokemonData]="pokemon" ></app-pokemon-card>
