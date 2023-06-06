@@ -1,5 +1,8 @@
-<div>
+<div class="text-center pokemon-card mb-3">
   <img src="{{pokemonData.image}}">
   <p>{{pokemonData.name}}</p>
-  <p *ngFor="let type of pokemonData.types" [ngClass]="getColorByType(type.type.name)">{{type.type.name}}</p>
+  <div class="d-flex justify-content-center">
+    <div *ngFor="let type of pokemonData.types" [ngClass]="getColorByType(type.type.name)">{{type.type.name}}</div>
+  </div>
 </div>
+

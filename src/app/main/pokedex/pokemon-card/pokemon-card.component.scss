@@ -1,1 +1,14 @@
 @import "src/assets/main";
+
+.pokemon-card{
+  border-bottom: 2px solid darkgoldenrod;
+  border-right: 2px solid darkgoldenrod;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-radius: 20px;
+  padding: 30px 0 50px 0;
+}
+
+.pokemon-card:hover {
+  cursor:pointer;
+}

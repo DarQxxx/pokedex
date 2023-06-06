@@ -14,7 +14,6 @@ export class PokemonCardComponent implements OnChanges {
       console.log(this.pokemonData);
     }
   }
-
   getColorByType(type: string): string {
     return 'type--' + type;
   }

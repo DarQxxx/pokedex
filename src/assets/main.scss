@@ -3,5 +3,13 @@
 @each $type, $color in $types {
   .type--#{$type}{
     background-color: $color;
+    -webkit-text-stroke: 1px black;
+    font-weight: 800;
+    padding: 2px 18px;
   }
+}
+
+body{
+  background-color: color($colors, theme);
+  color: color($colors, white);
 }
