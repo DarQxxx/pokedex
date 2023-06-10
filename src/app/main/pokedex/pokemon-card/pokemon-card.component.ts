@@ -11,7 +11,7 @@ export class PokemonCardComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['pokemonData']) {
-      console.log(this.pokemonData);
+      // console.log(this.pokemonData);
     }
   }
   getColorByType(type: string): string {

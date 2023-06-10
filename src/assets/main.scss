@@ -6,10 +6,11 @@
     -webkit-text-stroke: 1px black;
     font-weight: 800;
     padding: 2px 18px;
+    color: color($colors, white);
   }
 }
 
 body{
-  background-color: color($colors, theme);
-  color: color($colors, white);
+  background-color: color($colors, theme) !important;
+  color: color($colors, white) !important;
 }

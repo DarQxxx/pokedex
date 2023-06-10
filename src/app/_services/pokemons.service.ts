@@ -5,7 +5,6 @@ import {RequestsService} from "../_requests/requests.service";
   providedIn: 'root'
 })
 export class PokemonsService implements OnInit{
-  pokemons = []
   constructor(private requests : RequestsService) {
 
   }
