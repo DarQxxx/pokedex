@@ -3,14 +3,14 @@
 @each $type, $color in $types {
   .type--#{$type}{
     background-color: $color;
-    -webkit-text-stroke: 1px black;
     font-weight: 800;
     padding: 2px 18px;
     color: color($colors, white);
+    text-transform: capitalize;
   }
 }
 
 body{
-  background-color: color($colors, theme) !important;
+  //background-color: color($colors, theme) !important;
   color: color($colors, white) !important;
 }

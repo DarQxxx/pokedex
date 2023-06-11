@@ -1,9 +1,9 @@
-<div class="text-center pokemon-card mb-3 ms-5 me-5 ms-sm-0 me-sm-0 ms-xl-3 me-xl-3 ms-xxl-0 me-xxl-0">
+<div [ngStyle]="getGradientByType(pokemonData.types)" class="text-center pokemon-card mb-3 ms-5 me-5 ms-sm-0 me-sm-0 ms-xl-3 me-xl-3 ms-xxl-0 me-xxl-0">
   <div class="pokemon-card--id">{{pokemonData.id}}</div>
-  <img src="{{pokemonData.image}}">
+  <img class="pokemon-card--img" src="{{pokemonData.image}}">
   <p>{{pokemonData.name}}</p>
   <div class="d-sm-flex justify-content-center flex-column flex-sm-row ">
-    <div *ngFor="let type of pokemonData.types" [ngClass]="getColorByType(type.type.name)">{{type.type.name}}</div>
+    <div class="pokemon-card--type" *ngFor="let type of pokemonData.types" [ngClass]="getColorByType(type.type.name)">{{type.type.name}}</div>
   </div>
 </div>
 
