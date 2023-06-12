@@ -15,17 +15,21 @@ export class PokemonCardComponent implements OnChanges {
     }
   }
   getGradientByType(types: any[]): any {
-    // @ts-ignore
-    console.log(colors[types[0].type.name]+ "00")
     if (types.length - 1)
-      { // @ts-ignore
-        return {'background': 'linear-gradient(to bottom,' + colors[types[0].type.name] + ' 28% ,' + colors[types[1].type.name] +')'};
+      {
+        return {'background': 'linear-gradient(to bottom,' + colors[types[0].type.name as keyof typeof colors] + ' 28% ,' + colors[types[1].type.name as keyof typeof colors] +')'};
       }
     else
       { // @ts-ignore
         return {'background': 'linear-gradient(to top,' + colors[types[0].type.name] + ' 26% ,' + colors[types[0].type.name]+ "88" +')'}
       }
   }
+  changeIdFormat(id:number){
+    return '#' + id.toString().padStart(3, '0');
+  }
+  changeNameFormat(name:string){
+    return name.split('-')[0];
+}
 
   getColorByType(type: string): string {
     return 'type--' + type;

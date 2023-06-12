@@ -35,7 +35,7 @@ export class PokedexComponent implements OnInit, OnDestroy{
 
   loadMorePokemons(){
     this.loading = true;
-    this.pokemonsService.getPokemonsData(60, (this.page) * 60)
+    this.pokemonsService.getPokemonsData(300, (this.page) * 300)
       .pipe(takeUntil(this.destroy$),
         tap((response: any[]) => {
           this.pokemonArray = [...this.pokemonArray, ...response];

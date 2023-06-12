@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row">
-    <app-pokemon-card class="col-xxl-2 col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let pokemon of pokemonArray" [pokemonData]="pokemon" ></app-pokemon-card>
+  <div class="row row-cols-xxl-5">
+    <app-pokemon-card class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let pokemon of pokemonArray" [pokemonData]="pokemon" ></app-pokemon-card>
   </div>
   <div *ngIf="loading" class="col-12">Ładowanie!</div>
 </div>
